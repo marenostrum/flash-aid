@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://flashaid/locale/flashaid.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  id="install"
+  title="&FLASHAIDTITLE;"
+  ondialogaccept="return onOK();"
+  onload="onLoad();"
+  persist="screenX screenY width height">
+
+    <script>
+	<![CDATA[
+	    function onLoad() {
+		document.getElementById("commands").value = window.arguments[0].inn.commands;
+	    }
+
+	    function onOK() {
+		window.arguments[0].out = {commands:document.getElementById("commands").value};
+		return true;
+	    }
+	]]>
+    </script>
+
+    <vbox flex="1">
+	<spacer height="10" flex="0"/>
+	<textbox value="&ScriptWarning;" readonly="true" multiline="true" cols="70" rows="4" flex="0"/>
+	<spacer height="10" flex="0"/>
+	<textbox id="commands" readonly="false" multiline="true" cols="70" rows="10" flex="1"/>
+	<spacer height="20" flex="0"/>
+    </vbox>
+</dialog>

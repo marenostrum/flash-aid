@@ -1,0 +1,1 @@
+pref("extensions.flashaid.terminal", "/usr/bin/x-terminal-emulator");

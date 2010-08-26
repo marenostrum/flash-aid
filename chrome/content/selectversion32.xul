@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://flashaid/locale/flashaid.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  id="install"
+  title="&FLASHAIDTITLE;"
+  ondialogaccept="return onOK();"
+  onload="onLoad();"
+  persist="screenX screenY width height">
+
+    <script>
+	<![CDATA[
+	    function onLoad() {
+		document.getElementById("flversion").value = window.arguments[0].inn.flversion;
+	    }
+
+	    function onOK() {
+		window.arguments[0].out = {flversion:document.getElementById("flversion").value};
+		return true;
+	    }
+	]]>
+    </script>
+
+    <vbox>
+	<spacer height="10" flex="0"/>
+	<textbox value="&Version32bit;" readonly="false" multiline="true" cols="50" rows="3" flex="1"/>
+	<spacer height="10" flex="0"/>
+	<hbox>
+	    <spacer width="10" flex="0"/>
+	    <label value="&InstallVersion;"/>
+	    <menulist id="flversion">
+		<menupopup>
+		  <menuitem label="32bit" value="32bit" selected="true" />
+		</menupopup>
+	    </menulist>
+	    <spacer width="10" flex="0"/>
+	</hbox>
+	<spacer height="5" flex="0"/>
+    </vbox>
+</dialog>

@@ -1,0 +1,11 @@
+<!ENTITY FLASHAIDTITLE "FLASH-AID">
+<!ENTITY FLASHAIDPreferences "FLASH-AID Preferences">
+<!ENTITY Install "Install">
+<!ENTITY InstallVersion "Flash version to be installed:">
+<!ENTITY Preferences "Preferences">
+<!ENTITY Remove "Remove">
+<!ENTITY SelectProgram "Select Program">
+<!ENTITY ScriptWarning "The extension will now execute a shell script to perform necessary flash maitenance actions. A terminal will open and will request your password, since the process needs administrative privileges. You will need to restart Firefox after the installation. The script code to be executed is listed below.">
+<!ENTITY Terminal "Terminal Path">
+<!ENTITY Version64bit "FLASH-AID has detected that your browser architecture is 64bit, but will install the latest 32bit version of Flash, since Adobe is not supporting the 64bit version anymore and all available versions have a critical vulnerability. The 64bit install will be available as soon as Adobe supports it again. So keep FLASH-AID updated.">
+<!ENTITY Version32bit "FLASH-AID has detected that your browser architecture is 32bit and thus will install Flash 32bit version.">
