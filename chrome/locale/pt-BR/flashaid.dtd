@@ -7,5 +7,5 @@
 <!ENTITY SelectProgram "Selecionar Programa">
 <!ENTITY ScriptWarning "A extensão executará agora um shell script para executar a manutenção necessária do plugin flash. Um terminal irá se abrir e requisitar sua senha, pois o processo requer privilégios administrativos. Você precisará reiniciar o Firefox após a instalação. O código do script a ser executado está listado abaixo.">
 <!ENTITY Terminal "Caminho do Console">
-<!ENTITY Version64bit "FLASH-AID detectou que a arquitetura do seu navegador é 64bit, mas irá instalar a versão 32bit mais recente do plugin Flash, pois a Adobe deixou de liberar versões 64bit e todas as versões disponíveis possuem uma falha de segurança crítica.">
+<!ENTITY Version64bit "FLASH-AID detectou que a arquitetura do seu navegador é 64bit e irá instalar a versão 64bit beta mais recente do plugin Flash, mas você pode selecionar a versão 32bit se preferir uma versão estável.">
 <!ENTITY Version32bit "FLASH-AID detectou que a arquitetura do seu navegador é 32bit e portanto irá instalar a versão mais recente do plugin Flash 32bit.">

@@ -83,7 +83,7 @@ var flashaidInstall = {
 
 		    //prompt user for confirmation and version selection
 		    var strbundle = document.getElementById("flashaidstrings");
-		    var params = {inn:{flversion:"32bit"}, out:null};
+		    var params = {inn:{flversion:"64bit"}, out:null};
 		    window.openDialog("chrome://flashaid/content/selectversion64.xul", "",
 			"chrome, dialog, modal, resizable=yes", params).focus();
 
@@ -120,10 +120,10 @@ var flashaidInstall = {
 		var commandline = "sudo apt-get --yes install flashplugin-nonfree && sudo ln -s /usr/lib/mozilla/plugins/flashplugin-alternative.so /usr/lib/firefox-addons/plugins/libflashplayer.so";
 	    }
 
-	    //if(flversion == "64bit v10.0.45.2"){//match 64bit architecture and declare command
+	    if(flversion == "64bit"){//match 64bit architecture and declare command
 
-		//var commandline = "cd "+tempfolder.path+" && rm -f *.tar.gz* && wget http://download.macromedia.com/pub/labs/flashplayer10/libflashplayer-10.0.45.2.linux-x86_64.so.tar.gz && tar xvf libflashplayer-10.0.45.2.linux-x86_64.so.tar.gz && sudo mv libflashplayer.so /usr/lib/mozilla/plugins/ && sudo ln -s /usr/lib/mozilla/plugins/libflashplayer.so /usr/lib/firefox-addons/plugins/libflashplayer.so && rm -f *.tar.gz* ";
-	    //}
+		var commandline = "cd "+tempfolder.path+" && rm -f *.tar.gz* && wget http://download.macromedia.com/pub/labs/flashplayer10/flashplayer_square_p1_64bit_linux_091510.tar.gz && tar xvf flashplayer_square_p1_64bit_linux_091510.tar.gz && sudo mv libflashplayer.so /usr/lib/mozilla/plugins/ && sudo ln -s /usr/lib/mozilla/plugins/libflashplayer.so /usr/lib/firefox-addons/plugins/libflashplayer.so && rm -f *.tar.gz*";
+	    }
 
 	    if(runscript == true){
 

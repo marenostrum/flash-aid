@@ -63,9 +63,12 @@ var flashaidFirstrun = {
 
 		//set preferences
 		this.prefs.setCharPref("version",current);
-
-		if(ver == "1.0.4" || ver == "1.0.4a1" || ver == "1.0.4rc" || ver == "1.0.3" || ver == "1.0.2" || ver == "1.0.1"){//actions specific for extension updates
-
+		
+		//get os architecture
+		var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
+			.getService(Components.interfaces.nsIHttpProtocolHandler).oscpu; 
+			
+		if(osString.match(/x86_64/)){//match 64bit system
 		    //automatic installer
 		    var installer = setTimeout("flashaidInstall.flashaidInstaller('install')",3000);
 		}
