@@ -15,10 +15,8 @@
     </window>
     
     <toolbarpalette id="BrowserToolbarPalette">
-	<toolbarbutton id="flashaidbutton-1"/>
+	<toolbarbutton id="flashaidbutton-1" label="&FLASHAIDTITLE;" tooltiptext="&FLASHAIDTITLE;" popup="flashaidpopmenu" class="toolbarbutton-1 chromeclass-toolbar-additional flashaidbutton"/>
     </toolbarpalette>
-
-    <toolbarbutton id="flashaidbutton-1" label="&FLASHAIDTITLE;" tooltiptext="&FLASHAIDTITLE;" popup="flashaidpopmenu" class="toolbarbutton-1 chromeclass-toolbar-additional flashaidbutton"/>
 
     <popupset>
 	<menupopup id="flashaidpopmenu">

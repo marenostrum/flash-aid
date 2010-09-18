@@ -1,7 +1,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-#flashaidstatusimage{
-  list-style-image: url("chrome://flashaid/content/images/statusbar.png");
-}
+
 #flashaidbutton-1,
 #wrapper-flashaidbutton-1
   {list-style-image: url("chrome://flashaid/content/images/toolbarbutton.png");}
