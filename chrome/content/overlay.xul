@@ -27,11 +27,4 @@
 	    <menuitem label="&Preferences;" class="menuitem-iconic" image="chrome://flashaid/content/images/settings_small.png" oncommand="window.openDialog('chrome://flashaid/content/options.xul','flashaid-prefs', 'chrome,centerscreen,alwaysRaised');"/>
 	</menupopup>
     </popupset>
-
-    <statusbar id="status-bar">
-	<statusbarpanel id="flashaidstatusbar" tooltiptext="&FLASHAIDTITLE;" popup="flashaidpopmenu">
-	    <image id="flashaidstatusimage"/>
-	</statusbarpanel>
-    </statusbar>
-
 </overlay>
