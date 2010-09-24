@@ -5,7 +5,7 @@
 <!ENTITY Preferences "Preferences">
 <!ENTITY Remove "Remove">
 <!ENTITY SelectProgram "Select Program">
-<!ENTITY ScriptWarning "The extension will now execute a shell script to perform necessary flash maitenance actions. A terminal will open and will request your password, since the process needs administrative privileges. You will need to restart Firefox after the installation. The script code to be executed is listed below.">
+<!ENTITY ScriptWarning "The extension will now execute a shell script to perform necessary flash maintenance actions. A terminal will open and will request your password, since the process needs administrative privileges. You will need to restart Firefox after the installation. The script code to be executed is listed below.">
 <!ENTITY Terminal "Terminal Path">
 <!ENTITY Version64bit "FLASH-AID has detected that your browser architecture is 64bit and will install the latest 64bit beta version of Flash, but you can choose the 32bit version if you prefer the stable version.">
 <!ENTITY Version32bit "FLASH-AID has detected that your browser architecture is 32bit and thus will install Flash 32bit version.">
