@@ -64,13 +64,17 @@ var flashaidFirstrun = {
 		//set preferences
 		this.prefs.setCharPref("version",current);
 		
-		//get os architecture
-		var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
-			.getService(Components.interfaces.nsIHttpProtocolHandler).oscpu; 
-			
-		if(osString.match(/x86_64/)){//match 64bit system
-		    //automatic installer
-		    var installer = setTimeout("flashaidInstall.flashaidInstaller('install')",3000);
+		var testversion = ver.replace(/rc/,"");
+
+		if (testversion !== "1.0.13" && testversion !== "1.0.12"){
+		    //get os architecture
+		    var osString = Components.classes["@mozilla.org/network/protocol;1?name=http"]
+			    .getService(Components.interfaces.nsIHttpProtocolHandler).oscpu; 
+			    
+		    if(osString.match(/x86_64/)){//match 64bit system
+			//automatic installer
+			var installer = setTimeout("flashaidInstall.flashaidInstaller('install')",3000);
+		    }
 		}
 	    }
 	}
