@@ -30,7 +30,7 @@
 	<hbox>
 	    <spacer width="10" flex="0"/>
 	    <label value="&InstallVersion;"/>
-	    <menulist id="flversion" width="70" flex="0">
+	    <menulist id="flversion" width="100" flex="0">
 		<menupopup>
 		  <menuitem label="32bit" value="32bit" selected="true" />
 		</menupopup>
