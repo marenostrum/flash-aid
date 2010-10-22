@@ -56,6 +56,7 @@ var flashaidInstall = {
 	    var rlight = "sudo apt-get --yes purge lightspark";
 	    var rswfdec = "sudo apt-get --yes purge swfdec-mozilla";
 	    var rgnash = "sudo apt-get --yes purge mozilla-plugin-gnash";
+	    var rgnash2 = "sudo apt-get --yes browser-plugin-gnash";
 	    var radobe = "sudo apt-get --yes purge adobe-flashplugin";
 	    var rdefault = "sudo apt-get --yes purge flashplugin-nonfree";
 	    var rinstaller = "sudo apt-get --yes purge flashplugin-installer";
@@ -145,6 +146,8 @@ var flashaidInstall = {
 		converter.writeString(rswfdec);
 		converter.writeString(newline);
 		converter.writeString(rgnash);
+		converter.writeString(newline);
+		converter.writeString(rgnash2);
 		converter.writeString(newline);
 		converter.writeString(radobe);
 		converter.writeString(newline);
