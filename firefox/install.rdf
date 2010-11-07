@@ -4,7 +4,7 @@
 
     <Description about="urn:mozilla:install-manifest">
 	<em:id>flashaid@lovinglinux.megabyet.net</em:id>
-	<em:version>1.0.16</em:version>
+	<em:version>1.0.17</em:version>
 	<em:type>2</em:type>
 	<em:optionsURL>chrome://flashaid/content/options.xul</em:optionsURL>
 	<em:name>FLASH-AID</em:name>
