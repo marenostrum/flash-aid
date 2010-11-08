@@ -1,0 +1,11 @@
+<!ENTITY FLASHAIDTITLE "FLASH-AID">
+<!ENTITY FLASHAIDPreferences "FLASH-AID Tercihleri">
+<!ENTITY Install "Kur">
+<!ENTITY InstallVersion "Kurulacak Flash sürümü:">
+<!ENTITY Preferences "Tercihler">
+<!ENTITY Remove "Kaldır">
+<!ENTITY SelectProgram "Program Seç">
+<!ENTITY ScriptWarning "Eklenti şimdi gerekli flash bakım eylemlerini yapmak üzere bir kabuk betiği çalıştıracak. Süreç yönetici hakları gerektirdiğinden, bir uçbirim açılacak ve parolanızı isteyecek. Kurulumdan sonra Firefox'u yeniden başlatmalısınız. Yürütülecek betiğin kodları aşağıda listelenmiştir.">
+<!ENTITY Terminal "Uçbirim Youlu">
+<!ENTITY Version64bit "FLASH-AID tarayıcı mimarinizin 64 bit olduğunu saptadı ve Flash'ın en yeni 64bit beta sürümünü kuracak ama kararlı sürümü tercih ederseniz 32bit sürümünü seçebilirsiniz.">
+<!ENTITY Version32bit "FLASH-AID tarayıcı mimarinizin 32 bit olduğunu saptadı ve dolayısıyla Flash 32bit sürümünü kuracak.">
